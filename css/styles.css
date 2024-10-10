@@ -2,3 +2,59 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #f0f0f0;
+    background-color: #101010;
+    margin: 8px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    a {
+        margin-left: 10px;
+        font-size: 8px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: flex;
+    margin: 8px auto;
+}
+
+.hero-text {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 116px;
+
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
