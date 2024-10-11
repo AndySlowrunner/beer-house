@@ -12,14 +12,20 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #f0f0f0;
     background-color: #101010;
-    margin: 8px;
+    margin: 8px auto;
+    max-width: 360px;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 8px;
     margin-right: 8px;
+
+    img {
+        display: flex;
+        }
 }
 
 .navigation {
@@ -44,6 +50,7 @@ body {
 
 .hero img {
     display: flex;
+    max-width: 344px;
     margin: 8px auto;
 }
 
@@ -57,4 +64,59 @@ body {
     position: absolute;
     top: 32px;
     right: 32px;
+}
+
+.card-group-title {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.card {
+    max-width: 328px;
+    border-radius: 10px;
+    background-color: #906c3b;
+    margin: 8px auto 24px;
+
+    h2 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+.description {
+    padding: 4px 16px 16px;
+
+    img {
+        width: 112px;
+        height: 16px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    button {
+        border: 2px solid #f0f0f0;
+        background-color: transparent;
+        border-radius: 30px;
+        width: 132px;
+        height: 40px;
+
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #f0f0f0;
+    }
+}
+
+.card .image {
+    width: 100%;
 }
