@@ -13,6 +13,13 @@ ul {
     list-style-type: none;
 }
 
+h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     color: #f0f0f0;
@@ -72,38 +79,41 @@ body {
 }
 
 .products {
-    padding-bottom: 16px;
+    margin: 0 16px 32px;
+
+    button {
+        display: block;
+        border: none;
+        border-radius: 20px;
+        width: 136px;
+        height: 24px;
+        background: #cdc9c4;
+        margin: 16px auto 0;
+
+        font-weight: 600;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #101010;
+    }
+
+    h2 {
+        margin: 16px 0;
+    }
 }
 
-.products > button {
-    display: block;
-    border: none;
-    border-radius: 20px;
-    width: 136px;
-    height: 24px;
-    background: #cdc9c4;
-    margin: 16px auto 0;
-
-    font-weight: 600;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #101010;
-}
-
-.card-group-title {
-    text-align: center;
-    margin: 16px 0;
+.card-group {
+    display: grid;
+    row-gap: 24px;
 }
 
 .card {
     max-width: 328px;
     border-radius: 10px;
     background-color: #906c3b;
-    margin: 0 auto 24px;
 
     h2 {
         font-weight: 500;
-        font-size: 20px;
+        text-align: left;
     }
 }
 
@@ -150,16 +160,18 @@ body {
 }
 
 .board {
-    background-image: url(../images/boards-mobile.png);
+    background-image: url(../images/boards-mob-1.png);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 56px;
+    padding-bottom: 60px;
 }
 
 .list-item {
+    display: grid;
+    row-gap: 24px;
+    padding: 0 16px;
+
     p {
         margin-top: 24px;
         font-weight: 500;
@@ -168,11 +180,10 @@ body {
 }
 
 .item {
-    margin: 0 16px 34px 24px;
 
     img {
-        width: 50%;
-        height: 50%;
+        width: 152px;
+        height: 162px;
         display: flex;
         margin: 0 auto;
     }
@@ -187,11 +198,6 @@ body {
     padding: 24px 32px 32px;
 
     h2 {
-        font-weight: 600;
-        font-size: 20px;
-        text-transform: uppercase;
-        text-align: center;
-
         margin-bottom: 24px;
     }
 
@@ -267,15 +273,11 @@ form {
     margin: 32px auto;
 
     h2 {
-        font-weight: 600;
-        font-size: 20px;
-        text-transform: uppercase;
-        text-align: center;
         margin-bottom: 24px;
     }
 
     img {
-        max-width: 296px;
+        width: 100%;
         margin-bottom: 8px;
     }
 }
@@ -294,4 +296,42 @@ form {
 .text {
     font-size: 14px;
     margin-top: 12px;
+}
+
+.about {
+    background-image: url(../images/boards-mob-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 32px 24px 40px 32px;
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+p + p {
+    margin-top: 16px;
+}
+
+.slider {
+    background-color: #906c3b;
+    padding: 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.craft-image {
+    width: 100%;
+}
+
+.dots {
+    margin: 16px auto 0;
 }
