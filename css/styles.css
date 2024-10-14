@@ -261,3 +261,37 @@ form {
         color: #f0f0f0;
     }
 }
+
+.news {
+    max-width: 296px;
+    margin: 32px auto;
+
+    h2 {
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    img {
+        max-width: 296px;
+        margin-bottom: 8px;
+    }
+}
+
+.news-list {
+    display: grid;
+    row-gap: 24px;
+}
+
+.date {
+    font-weight: 500;
+    font-size: 14px;
+    color: #906c3b;
+}
+
+.text {
+    font-size: 14px;
+    margin-top: 12px;
+}
