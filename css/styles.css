@@ -24,7 +24,7 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #f0f0f0;
     background-color: #101010;
-    margin: 8px auto;
+    margin: 0 auto;
     max-width: 360px;
 }
 
@@ -32,38 +32,54 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin: 8px 18px 8px 16px;
+}
 
-    img {
-        display: flex;
-        }
+.logo-small {
+    display: flex;
+    }
+
+.logo-large {
+    display: none;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    gap: 24px;
 
     a {
         margin-left: 10px;
         font-size: 8px;
     }
+}
 
-    div {
-        display: flex;
-        align-items: center;
-    }
+.address {
+    display: flex;
+    align-items: center;
+}
+
+.address-img {
+    margin-left: 16px;
+}
+
+.header-nav {
+    display: none;
 }
 
 .hero {
     position: relative;
+    margin-bottom: 16px;
 }
 
-.hero img {
+.mobile-hero {
     display: flex;
     max-width: 344px;
-    margin: 8px auto;
+    margin: 0 auto;
+}
+
+.desktop-hero {
+    display: none;
 }
 
 .hero-text {
@@ -78,8 +94,20 @@ body {
     right: 32px;
 }
 
+.hero-btn {
+    display: none;
+}
+
+.hero-slider {
+    display: none;
+}
+
 .products {
-    margin: 0 16px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto 32px;
 
     button {
         display: block;
@@ -98,7 +126,7 @@ body {
     }
 
     h2 {
-        margin: 16px 0;
+        margin: 0 0 16px;
     }
 }
 
@@ -162,6 +190,13 @@ body {
 }
 
 .board {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+
     background-image: url(../images/boards-mob-1.png);
     background-size: cover;
 
@@ -357,6 +392,8 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 16px 32px 32px 16px;
+
+    background: #050505;
 }
 
 .footer-nav {
@@ -387,4 +424,124 @@ footer {
 .info .email {
     display: flex;
     align-items: center;
+}
+
+@media (min-width: 1280px) {
+    .logo-small {
+        display: none;
+    }
+
+    .logo-large {
+        display: flex;
+        margin-top: 20px;
+
+        transition: transform 250ms ease;
+    }
+
+    .logo-large:hover {
+        transform: scale(75%);
+    }
+
+    body {
+        max-width: 1440px;
+    }
+
+    .header-container {
+        max-width: 940px;
+        margin: 20px auto 30px;
+    }
+
+    .burger-logo {
+        display: none;
+    }
+
+    .header-nav {
+        display: block;
+        
+        ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: end;
+        gap: 50px;
+
+        .address a {
+            font-size: 14px;
+        }
+
+        a:hover {
+            color: #906c3b;
+        }
+    }
+
+    .email-img {
+        width: 16px;
+    }
+
+    .address-img {
+        width: 15px;
+        margin-left: 32px;
+    }
+
+    .hero {
+        max-width: 1280px;
+        margin: 0 auto 70px;
+    }
+
+    .mobile-hero {
+        display: none;
+    }
+
+    .desktop-hero {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .hero-text {
+        font-size: 64px;
+        width: 461px;
+
+        top: 80px;
+        right: 170px;
+    }
+
+    .hero-btn {
+        display: flex;
+        position: absolute;
+        top: 264px;
+        right: 170px;
+        border-radius: 20px;
+        border: none;
+        width: 220px;
+        height: 40px;
+        background: #906c3b;
+        cursor: pointer;
+
+        padding-left: 70px;
+        padding-top: 12px;
+
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #f0f0f0;
+
+        &:hover {
+            background: #684e2b;
+        }
+    }
+
+    .hero-slider {
+        display: block;
+        margin: 20px auto 0;
+    }
 }

@@ -16,28 +16,49 @@
         <div class="header-container">
             <div class="logo">
                 <a href="./index.html">
-                    <img src="./icons/logo.svg" alt="logo">
+                    <img src="./icons/logo.svg" alt="logo" class="logo-small">
+                    <img src="./icons/logo-desktop.svg" alt="logo" class="logo-large">
                 </a>
             </div>
             <nav class="navigation">
-                <div class="email">
-                    <img src="./icons/Vector.svg" alt="email" class="email-img">
-                    <a href="mailto:beerhause@gmail.com" class="email">beerhause@gmail.com</a>
-                </div>
                 <div class="address">
+                    <img src="./icons/Vector.svg" alt="email" class="email-img">
+                    <a href="mailto:beerhause@gmail.com" class="email-link">beerhause@gmail.com</a>
+                
                     <img src="./icons/Vector-1.svg" alt="address" class="address-img">
-                    <a href="https://maps.app.goo.gl/6mqcnyEomYxkpMkf8" class="address">Dnipro, Nauky av., 99</a>
+                    <a href="https://maps.app.goo.gl/6mqcnyEomYxkpMkf8" class="address-link">Dnipro, Nauky av., 99</a>
+                </div>
+                <img src="./icons/Vector-2.svg" alt="burger" class="burger-logo">
+                <div class="header-nav">
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#products">Our beer</a>
+                        </li>
+                        <li>
+                            <a href="#news">News</a>
+                        </li>
+                        <li>
+                            <a href="#about">About us</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#location">Where to buy</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-            <div class="burger-menu">
-                <img src="./icons/Vector-2.svg" alt="burger" class="burger-logo">
-            </div>
         </div>
     </header>
     <main>
         <section class="hero">
-            <img src="./images/hero-mobile2x.png" alt="hero">
+            <img src="./images/hero-mobile2x.png" alt="hero" class="mobile-hero">
+            <img src="./images/hero-desctop.png" alt="hero" class="desktop-hero">
             <h1 class="hero-text">Craft beer production</h1>
+            <button type="button" class="hero-btn">Catalog</button>
+            <img src="./icons/dots-desktop.svg" alt="dots" class="hero-slider">
         </section>
         <section class="products" id="products">
             <h2 class="card-group-title">Our beer</h2>
@@ -120,7 +141,7 @@
                 <button class="form-btn" type="submit">Send</button>
             </form>
         </section>
-        <section class="news">
+        <section class="news" id="news">
             <h2>News</h2>
             <ul class="news-list">
                 <li class="news-item">
