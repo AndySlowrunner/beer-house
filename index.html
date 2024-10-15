@@ -61,12 +61,15 @@
             <img src="./icons/dots-desktop.svg" alt="dots" class="hero-slider">
         </section>
         <section class="products" id="products">
-            <h2 class="card-group-title">Our beer</h2>
+            <h2 class="subtitle">Our beer</h2>
             <ul class="card-group">
                 <li class="card">
-                    <img class="image" src="./images/beer-mob-1.png" alt="beer_type_1">
+                    <picture>
+                        <source srcset="./images/beer-desktop-1.png" media='(min-width: 1280px)'>
+                        <img class="image" src="./images/beer-mob-1.png" alt="beer_type_1">
+                    </picture>
                     <div class="description">
-                        <h2>Beer name</h2>
+                        <h2 class="card-subtitle">Beer name</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veniam quasi quis nemo recusandae?</p>
                         <div>
                             <img src="./icons/rating-mobile.png" alt="rating">
@@ -75,9 +78,12 @@
                     </div>
                 </li>
                 <li class="card">
-                    <img class="image" src="./images/beer-mob-2.png" alt="beer_type_2">
+                    <picture>
+                        <source srcset="./images/beer-desktop-2.png" media='(min-width: 1280px)'>
+                        <img class="image" src="./images/beer-mob-2.png" alt="beer_type_2">
+                    </picture>
                     <div class="description">
-                        <h2>Beer name</h2>
+                        <h2 class="card-subtitle">Beer name</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veniam quasi quis nemo recusandae?</p>
                         <div>
                             <img src="./icons/rating-mobile.png" alt="rating">
@@ -86,9 +92,12 @@
                     </div>
                 </li>
                 <li class="card">
-                    <img class="image" src="./images/beer-mob-3.png" alt="beer_type_3">
+                    <picture>
+                        <source srcset="./images/beer-desktop-3.png" media='(min-width: 1280px)'>
+                        <img class="image" src="./images/beer-mob-3.png" alt="beer_type_3">
+                    </picture>
                     <div class="description">
-                        <h2>Beer name</h2>
+                        <h2 class="card-subtitle">Beer name</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veniam quasi quis nemo recusandae?</p>
                         <div>
                             <img src="./icons/rating-mobile.png" alt="rating">
@@ -97,9 +106,12 @@
                     </div>
                 </li>
                 <li class="card last-card">
-                    <img class="image" src="./images/beer-mob-4.png" alt="beer_type_4">
+                    <picture>
+                        <source srcset="./images/beer-desktop-4.png" media='(min-width: 1280px)'>
+                        <img class="image" src="./images/beer-mob-4.png" alt="beer_type_4">
+                    </picture>
                     <div class="description">
-                        <h2>Beer name</h2>
+                        <h2 class="card-subtitle">Beer name</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veniam quasi quis nemo recusandae?</p>
                         <div>
                             <img src="./icons/rating-mobile.png" alt="rating">
@@ -108,7 +120,7 @@
                     </div>
                 </li>
             </ul>
-            <button type="button">All catalog</button>
+            <button type="button" class="prod-btn">All catalog</button>
         </section>
         <section class="board">
             <ul class="list-item">
@@ -131,18 +143,20 @@
             </ul>
         </section>
         <section class="request-form">
-            <h2>Leave a request</h2>
+            <h2 class="subtitle">Leave a request</h2>
             <form>
-                <input type="text" placeholder="Your name*" required>
-                <input type="email" placeholder="Your email*" required>
-                <input type="number" placeholder="Your phone">
+                <div class="input-group">
+                    <input type="text" placeholder="Your name*" required>
+                    <input type="email" placeholder="Your email*" required>
+                    <input type="number" placeholder="Your phone">
+                </div>
                 <textarea name="message" placeholder="Your message"></textarea>
                 <p>You accept the terms of the <a href="">privacy policy</a></p>
                 <button class="form-btn" type="submit">Send</button>
             </form>
         </section>
         <section class="news" id="news">
-            <h2>News</h2>
+            <h2 class="subtitle">News</h2>
             <ul class="news-list">
                 <li class="news-item">
                     <img src="./images/news-mob-1.png" alt="news">
@@ -182,7 +196,7 @@
             </ul>
         </section>
         <section class="about" id="about">
-            <h2>About us</h2>
+            <h2 class="subtitle">About us</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque officiis mollitia explicabo deserunt aspernatur repellendus dolor amet vero quisquam nemo aut provident deleniti voluptatibus, ipsum illo odit nisi voluptatem, suscipit, doloremque a nihil? Laborum quidem eligendi vero rem quasi quam corporis nobis possimus soluta at ex, aliquid voluptates earum, reprehenderit neque praesentium magnam. Dolore non est explicabo ea tenetur repellendus vel cupiditate fugiat vero, nihil illum assumenda commodi animi reiciendis, at minus nobis sed? Atque, fugit magni rerum architecto officia natus sapiente rem nam eveniet nulla placeat obcaecati similique!</p>
             <p>Inventore vero nobis maxime hic excepturi ea et dolores quibusdam, ipsam dolore nostrum magni suscipit veniam quia modi. Atque rem ex impedit sit mollitia odio exercitationem! Accusantium, blanditiis corrupti illo suscipit eaque mollitia qui minus, eius similique ab vero praesentium esse provident rem distinctio commodi hic aliquam est culpa fuga maiores quo error! Veritatis, sint? Quam iste facilis veritatis eligendi consectetur porro placeat sunt delectus illo, minima, vel soluta corporis et maiores voluptatum excepturi voluptatibus dicta laborum quo quod ducimus aperiam? Rerum tenetur possimus, labore reiciendis numquam harum quo temporibus quas ducimus repudiandae cum assumenda praesentium laborum libero at culpa eum voluptas tempora nostrum.</p>
         </section>
@@ -191,7 +205,7 @@
             <img src="./icons/dots.svg" alt="dots" class="dots">
         </section>
         <section class="location" id="location">
-            <h2>Where to buy</h2>
+            <h2 class="subtitle">Where to buy</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2646.872801578057!2d35.05044!3d48.439781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDI2JzIzLjIiTiAzNcKwMDMnMDEuNiJF!5e0!3m2!1suk!2sua!4v1728912695382!5m2!1suk!2sua"
                 width="360" height="248" style="border:0;" allowfullscreen="" loading="lazy"
