@@ -776,6 +776,13 @@ footer {
 
     .arrow {
         display: block;
+        cursor: pointer;
+
+        transition: transform 250ms ease-in;
+
+        &:hover {
+            transform: scale(0.8);
+        }
     }
 
     .location {
